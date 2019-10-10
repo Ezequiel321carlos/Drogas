@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> [%bloco title%]  [%endbloco title%] </title>
+    <title> {% block title %} 
+            <style>
+                    #bg{
+         background-color: beige;
+         width:"100";
+         height:"100";
+         }
+                        
+                    #bgt{
+        background-color: rgb(218, 218, 172);
+        width:"100";
+        height:"100";
+        }
+                        
+                    .mu{
+                            
+        background-color: rgb(0, 179, 0);
+        }
+        
+                    .textcor{
+        color: white;
+        }
+                </style>
+         {% endblock title %} </title>
 </head>
 <body>
-    [%bloco conteudo%] 
-    <h1> Tic Tac </h1>
+    {% block conteudo %}
+   
 
-     [%endbloco conteudo%]
+     {% endblock conteudo %}
 </body>
 </html>

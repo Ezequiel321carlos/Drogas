@@ -1,32 +1,13 @@
 <html>
     <head>
-        <style>
-            #bg{
- background-color: beige;
- width:"100";
- height:"100";
- }
-                
-            #bgt{
-background-color: rgb(218, 218, 172);
-width:"100";
-height:"100";
-}
-                
-            .mu{
-                    
-background-color: rgb(0, 179, 0);
-}
+        {% block title %} 
 
-            .textcor{
-color: white;
-}
-        </style>
+        {% endblock title %}
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body  id="bg">
-        <img src="planta.jpeg" height="25%" width="100%">      
+        <img src="{{ url_for('static', filename='img/planta.jpeg') }}"  height="25%" width="100%">      
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -35,7 +16,7 @@ color: white;
               <a class="navbar-brand" href="#">Munu de Acesso</a>
               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                  <a class="nav-link" href="file:///C:/Users/Ezequiel%20Carlos/Desktop/2AII/Programa%C3%A7%C3%A3o%20de%20sistema%20para%20web/p1/Site/Login/login.html">Login <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="{{ url_for('templates', filename='templates/login.html') }}">Login <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="file:///C:/Users/Ezequiel%20Carlos/Desktop/2AII/Programa%C3%A7%C3%A3o%20de%20sistema%20para%20web/p1/Site/cadastro/cadastro.html">Cadastro</a>
@@ -50,7 +31,7 @@ color: white;
                 <td align="center" valign="top">
                     <h1> Situação das drogas no Brasil </h1>
 
-                    <img src="fumo.png" height="60%" width="90%">
+                    <img src="{{ url_for('static', filename='img/fumo.png') }}" height="60%" width="90%">
 
                     <h3>
                         Drogas, tanto lícitas quanto ilícitas, são um problema da sociedade brasileira que nunca sai de pauta.<br />
@@ -116,7 +97,7 @@ color: white;
                                             sabia que deveria ser feito: fui regularmente ao tratamento e evitei pessoas e lugares relacionados ao uso."
                             </h4>
 
-                                            <img src="ajuda.jpg" height="30%" width="80%">
+                                            <img src="{{ url_for('static', filename='img/ajuda.JPG') }}" height="30%" width="80%">
                         </td>
             </tr>
           </table>
