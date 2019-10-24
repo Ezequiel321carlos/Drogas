@@ -1,0 +1,105 @@
+<html>
+    <head>
+        {% block title %} 
+
+        {% endblock title %}
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body  id="bg">
+        <img src="{{ url_for('static', filename='img/planta.jpeg') }}"  height="25%" width="100%">      
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a class="navbar-brand" href="#">Munu de Acesso</a>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{{ url_for('templates', filename='templates/login.html') }}">Login <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="file:///C:/Users/Ezequiel%20Carlos/Desktop/2AII/Programa%C3%A7%C3%A3o%20de%20sistema%20para%20web/p1/Site/cadastro/cadastro.html">Cadastro</a>
+                </li>
+              </ul>
+              
+            </div>
+          </nav>     
+
+          <table width:"50" border="1" id="bgt">
+            <tr>
+                <td align="center" valign="top">
+                    <h1> Situação das drogas no Brasil </h1>
+
+                    <img src="{{ url_for('static', filename='img/fumo.png') }}" height="60%" width="90%">
+
+                    <h3>
+                        Drogas, tanto lícitas quanto ilícitas, são um problema da sociedade brasileira que nunca sai de pauta.<br />
+                        O controle, o consumo, a legislação são temas de estudos, pesquisas e discussão em todas as esferas.<br />
+                        A Fiocruz desenvolve inúmeros trabalhos e pesquisas relacionados à temática, alguns deles com o apoio da Fiotec.<br />
+                        Através desses projetos, que se complementam, é possível ter uma noção da dimensão da questão das drogas no País.<br />
+                        “Existem problemas que dizem respeito à população geral, como o consumo de álcool e tabaco, de uso lícito, e outros<br />
+                        que têm características particulares,afetando populações específicas, em contextos definidos, seja geograficamente,<br />
+                        seja em termos de tempo, seja pelo recorte etário, que tem características muito diferentes da população geral.<br />
+                        Este é o caso, por exemplo, das cenas de crack e do uso de drogas sintéticas em festas rave, ambas questões<br />
+                        bastante específicas embora inteiramente diversas entre si”, explicou Francisco Inácio Bastos, pesquisador da<br />
+                        Fiocruz especialista no assunto, que coordena alguns dos estudos vigentes no momento. O pesquisador afirmou que<br />
+                        na população geral existe um predomínio quase absoluto do álcool; do tabaco, ainda com relevância, mas que está<br />
+                        declinando; de alguns solventes, cujo uso é mais esporádico; maconha; cocaína em pó; e psicofármacos, remédios<br />
+                        psiquiátricos usados sem finalidade terapêutica. “Quando você vai para o campo e você vai para os locais de<br />
+                        tráfico você já enxerga uma cena completamente diferente, foi o caso do projeto de Crack - vulnerabilidades,<br />
+                        onde você vê pessoas fortemente desinseridas, em situação de pobreza”, explicou.Em todo o mundo, de acordo com<br />
+                        o UNODC, cerca de 200 milhões de pessoas –ou 4,8% da população mundial entre 15 e 64 anos– usam drogas ilícitas.<br />
+                        A cocaína é usada por 14,3 milhões de pessoas, o que corresponde a 0,3% da população nessa faixaetária.<br />
+                        Segundo o texto, cerca de 200 milhões de pessoas usam drogas ilícitas em todo o mundo, mais da metade<br />
+                        destas as consome ao menos uma vez por mês. Aproximadamente 25 milhões de pessoas são dependentes<br />
+                        químicos.“Houve aumento no uso de cocaína na Europa, América do Sul, África e Ásia, e diminuição na América do<br />
+                        Norte.Na América do Sul, o número aumentou de menos de 2 milhões para 2,25 milhões”, segundo o texto.
+                    </h3>
+                </td>
+                        <td>
+                            <h3  align="center" valign="top"> Pessoas que foram ajudadas </h3>
+                            <h4><b>Joaquina, 41 anos, arquiteta e urbanista, Belém (PA)</b><br/>
+
+                                    15 anos e 5 meses longe das drogas<br/>
+                                    
+                                    "Antes do uso das drogas, aos 19 anos, vivi coisas na minha vida, como um abuso sexual, que fizeram viver como um personagem, por causa da vergonha, culpa e medo.<br/>
+                                     Me aperfeiçoei em viver mentiras. Por muito tempo me destaquei como uma aluna nota 10, que me garantia a admiração e aceitação social, mas o egocentrismo crescente<br/>
+                                      me dizia que deveria controlar tudo a minha volta. Isso foi o meu maior algoz enquanto o uso das drogas tomava espaço das coisas importantes em minha vida.<br/>
+                                      <br/>
+                                    Me casei e fui mãe aos 21 anos, no terceiro ano de faculdade. Engravidei novamente e meu segundo filho nunca nasceu por causa do uso descontrolado de várias substâncias.<br/>
+                                     Me formei, me separei e frequentemente abandonava minha filha aos cuidados dos meus pais quando a compulsão tomava conta de todos os meus pensamentos, vontades e atitudes. Estava falida.<br/>
+                                     <br/>
+                                      A recuperação veio ao perceber a mudança na vida da minha mãe, que buscou ajuda nos grupos familiares. Me senti arrastada por seu exemplo e desejei com todo resto de força<br/>
+                                       e vida existentes em mim mudar, por isso pedi ajuda a ela. Assim, conheci um grupo da Narcóticos Anônimos. Hoje percebo virtudes em mim que me levam a práticas saudáveis:<br/>
+                                        esporte, acordar cedo, dormir cedo, ter um objetivo de vida e reconhecer minha razão de existir me fazem prosseguir num propósito espiritual em tempos difíceis.<br/>
+                                        <br/>
+                                      O enfrentamento da doença com a verdade foi o que me ajudou. Só com muita verdade somos capazes de reconhecer a derrota. Quando admito que perdi para as drogas, dou início<br/>
+                                       ao processo de contrapor o prazer que destrói. É preciso muita coragem para mudar, daí precisamos tanto uns dos outros."
+                            </h4>
+
+<br/>
+<br/>
+
+                            <h4><b>Vinícius, 34 anos, médico, Pinhais (PR)</b><br/>
+                                        <br/>
+                                            3 anos e 7 meses longe das drogas<br/>
+                                            <br/>
+                                            "Conheci as drogas na faculdade de medicina, aos 17 anos. Não consegui parar mais até os 30 anos. Foram 6 internações e muitas perdas, não só financeiras. Relacionamentos amorosos,<br/>
+                                            oportunidades profissionais e bons relacionamentos familiares ficaram impossíveis. Correr risco de morte era uma constante durante o período, mas o pior era minha limitação:<br/>
+                                            virei um prisioneiro das compulsões. Vivia para usar e usava para viver.<br/>
+                                              <br/>
+                                            Foi quando um colega de profissão, que também era dependente químico e hoje já é falecido por causa da doença, me apresentou o programa de Narcóticos Anônimos. Conheci o caminho para<br/>
+                                            a recuperação há nove anos, mas estou limpo somente há três anos e meio.Para chegar aqui, três coisas foram fundamentais: informação, fundo-de-poço e admissão. As pessoas não sabem que este<br/>
+                                            problema é uma doença mental e quando você diz isto, todos procuram outras explicações mais plausíveis: falha de caráter, má vontade, falta de Deus, culpa dos pais, traumas de infância, etc.<br/>
+                                            É mais fácil ver o problema desta forma. Sem a informação de que isto é uma doença é impossível se recuperar. Além da sociedade, o próprio adicto tem dificuldades em acreditar que se trata de<br/>
+                                            uma doença. Foi o momento que eu decidi seguir as sugestões dadas no tratamento e, quase que magicamente, minha vida só tem melhorado a partir de então. No início da minha jornada fiz o que já<br/>
+                                            sabia que deveria ser feito: fui regularmente ao tratamento e evitei pessoas e lugares relacionados ao uso."
+                            </h4>
+
+                                            <img src="{{ url_for('static', filename='img/ajuda.JPG') }}" height="30%" width="80%">
+                        </td>
+            </tr>
+          </table>
+    </body>
+</html>
