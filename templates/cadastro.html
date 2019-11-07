@@ -25,10 +25,10 @@ width: 500px;
             <a class="navbar-brand" href="#">Munu de Acesso</a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="file:///C:/Users/Ezequiel%20Carlos/Desktop/2AII/Programa%C3%A7%C3%A3o%20de%20sistema%20para%20web/p1/Site/pagina%20inicial/pagina%20inicial.html">Pagina Inicial <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/a">Pagina Inicial <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="file:///C:/Users/Ezequiel%20Carlos/Desktop/2AII/Programa%C3%A7%C3%A3o%20de%20sistema%20para%20web/p1/Site/Login/login.html">Login</a>
+                    <a class="nav-link" href="/b">Login</a>
                 </li>
             </ul>
 
@@ -56,7 +56,7 @@ width: 500px;
         </table>
     </div>
     <br />
-    <img src="ndrogas.jpg" class="rounded float-left" id="nd" />
+    <img src="{{ url_for('static', filename='img/ndrogas.jpg') }}" class="rounded float-left" id="nd" />
     <div>
         <table border="1" class="partlog">
             <tr>
